@@ -1,16 +1,16 @@
- - name: variables preference
-   hosts: local
-   connection: local 
-   vars:
-    GREETING: "Hello from PLAY"
-   vars_files:
-   -  course.yaml
-   vars_prompt:
-   -  name: GREETING
+ -  name: variables preference
+    hosts: local
+    connection: local 
+    vars:
+      GREETING: "Hello from PLAY"
+    vars_files:
+    -  course.yaml
+    vars_prompt:
+    - name: GREETING
       prompt: Please greet
       private: false  
 
-   tasks:
+    tasks:
     name: print greetings
     vars:
       GREETING: "Hello from task"
