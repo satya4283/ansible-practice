@@ -2,7 +2,7 @@
   hosts: local
   connection: local
   vars:
-    COURSE: "Devops with AWS" # string
+    COURSE: Devops with AWS # string
     DURATION: 10 # NUMBER
     IS_LIVE: true
     TOOLS:
