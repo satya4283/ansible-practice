@@ -1,0 +1,20 @@
+- name: Ansible data types 
+  hosts: local
+  connection: local
+  vars:
+    COURSE: "Devops with AWS" # string
+    DURATION: 10 # NUMBER
+    IS_LIVE: true
+    TOOLS:
+    - ansible
+    - terraform
+    - shell script
+    - linux
+    CONCEPTS:
+      CI: "jenkins"
+      SCRIPTING: "shell, ansible, terraform, python"
+
+  task:
+  - name: print course information
+    ansinble.builtin.debug:
+      msg: "Hello I am learning {{COURSE}}, duration: {{DURATION}}x, is live: {{IS_LIVE}} and list of tools:{{TOOLS}} and concepts:{{CONCEPTS}"
