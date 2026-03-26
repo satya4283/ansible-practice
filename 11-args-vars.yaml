@@ -1,4 +1,4 @@
-- name: Inventory level varaibles 
+- name: args level variables 
   hosts: local
   connection: local 
   tasks:
