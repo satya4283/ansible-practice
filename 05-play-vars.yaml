@@ -12,6 +12,7 @@
   tasks:
   - name: print course information
     ansible.builtin.debug:
+    # vars reference should always surrounded by ""
       msg: "Hello {{ COURSE }}, course duration: {{ DURATION }}, trainer is {{ TRAINER }}"
   
   - name: print personal information 
