@@ -5,7 +5,7 @@
     GREETING: "Hello from PLAY"
    vars_files:
    - course.yaml
-   vars_promt:
+   vars_prompt:
    - name: GREETING
      promt: Hello from promt
      private: false
