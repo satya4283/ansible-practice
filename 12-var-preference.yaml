@@ -7,7 +7,7 @@
    - course.yaml
    vars_promt:
    - name: GREETING
-     promt: "Hello from promt"
+     promt: Hello from promt
      private: false
 
    tasks:
