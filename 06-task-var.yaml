@@ -13,9 +13,7 @@
       msg: "Hello {{ COURSE }}, course duration is {{ DURATION }}, trainer is {{ TRAINER }}"
 
 
-  - name: Print course intformation
-    vars:
-        COURSE: "Ansible"
+  - name: Print course intformation again
     ansible.builtin.debug:
       msg: "Hello {{ COURSE }}, course duration is {{ DURATION }}, trainer is {{ TRAINER }}"
 
