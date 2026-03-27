@@ -57,4 +57,3 @@
       IP: 256.765.435.874
     ansible.builtin.debug:
       msg: "{{IP | ansible.utils.ipaddr }}"
-
