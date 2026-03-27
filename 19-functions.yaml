@@ -45,4 +45,10 @@
       name: satyanarayana t 
     ansible.builtin.debug:
       msg: "{{ name| upper }}"
+  
+  - name: convert to lowercase
+    vars:
+      name: SATYANARAYANA T
+    ansible.builtin.debug:
+      msg: "{{ name| lower }}"
 
