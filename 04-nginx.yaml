@@ -1,6 +1,6 @@
 - name: Install and start nginx demo
   hosts: frontend
-  
+  become: yes
   tasks:
     - name: Install nginx
       package:
