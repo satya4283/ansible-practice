@@ -1,0 +1,14 @@
+- name: Task level variables
+  hosts: local
+  connection: local
+  vars:
+    property: 100acrs
+  tasks:
+    - name: print property
+      debug:
+        msg: "Hi, I got {{ property }} from my father"
+    - name: print property
+      vars:
+        property: 10acrs
+      debug:
+        msg: "Hi, I got {{ property }} from my father"
