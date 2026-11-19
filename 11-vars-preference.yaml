@@ -1,0 +1,18 @@
+- name: variables preferences
+  hosts: local
+  connection: local
+  vars:
+    course: ansible from play 
+  vars_files:
+    course.yaml
+  vars_prompt:
+    - name: course
+      prompt: Please enter the course name
+      private: false
+      
+  tasks:
+    - name: print play level variables
+      vars:
+        course: ansible from task
+      debug:
+        msg: "Hi, I am learning {{ course }} "
