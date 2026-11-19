@@ -1,0 +1,23 @@
+<Student>
+    <firstName>satyanarayana</firstName>
+    <lastName>tamarana</lastName>
+    <dob>02-12-1996</dob>
+    <addresses>
+        <address type='permanent'>
+            <doorNumber>3-61</doorNumber>
+            <streetName>velma</streetName>
+            <city>tuni</city>
+        </address>
+        <address type="temporary">
+            <doorNumber>3-65</doorNumber>
+            <streetName>velma street</streetName>
+            <city>rayavraam</city>
+        </address>
+    </addresses>
+    <skills>
+        <os>linux</os>
+        <ide>VS code </ide>
+        <cm>Ansible</cm>
+    </skills>
+
+</Student>

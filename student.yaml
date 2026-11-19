@@ -1,0 +1,38 @@
+- first_name: satyanarayana
+  last_name: tamarana
+  dob: 02-12-1996
+  addresses:
+    - type: permanent
+      doorNumber: 3-61
+      streetName: velama
+      city: tuni
+
+    - type: temporary
+      doorNumber: 3-61
+      streetName: velama
+      city: tuni
+
+  skills:
+    os: linux
+    IDE: VSCode
+    CM: ansible
+
+
+- first_name: prasanna 
+  last_name: bandaru
+  dob: 02-12-1996
+  addresses:
+    - type: permanent
+      doorNumber: 3-61
+      streetName: velama
+      city: tuni
+
+    - type: temporary
+      doorNumber: 3-61
+      streetName: velama
+      city: tuni
+
+  skills:
+    os: linux
+    IDE: VSCode
+    CM: ansible
