@@ -1,0 +1,7 @@
+- name: command line based variables
+  hosts: local
+  connection: local
+  tasks:  
+    - name: print command line variables
+      debug:
+        msg: "Hi, My name is {{ person_name }}"
