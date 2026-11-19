@@ -4,4 +4,4 @@
   tasks:
     - name: print Hello world 
       debug:
-         
+        msg: "Hello Ansible..!!!" 
