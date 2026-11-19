@@ -1,0 +1,6 @@
+- name: Inventory based variables demo
+  hosts: frontend
+  tasks:
+    - name: print Inventory based variables
+      debug:
+        msg: "Hi I am learning {{ course }} from trainer {{ trainer }} duration is {{ duration }}"
