@@ -9,9 +9,9 @@
     - name: course
       prompt: Please enter the course name
       private: false
-      
+
   tasks:
-    - name: print play level variables
+    - name: print variables preference
       vars:
         course: ansible from task
       debug:
