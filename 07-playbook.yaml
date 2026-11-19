@@ -1,0 +1,10 @@
+- name: File based variables demo 
+  hosts: local
+  connection: local
+  vars_files:
+    - course.yaml
+
+  tasks:
+    - name: print file level variables
+      debug:
+         msg: "Hi, I am learning {{ course }} from trainer {{ trainer }}, duration is {{ duration }}"
