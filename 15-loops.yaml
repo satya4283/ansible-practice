@@ -1,13 +1,13 @@
-- name: demo on loops 
+- name: demo on loops
   hosts: local
   connection: local
   become: yes
   vars:
     packages:
-      - nginx
-      - git 
-      - mysql
-      - htop
+    - nginx
+    - git
+    - mysql
+    - htop 
 
   tasks:
     - name: Install packages
@@ -15,4 +15,3 @@
         name: "{{ item }}'"
         state: present
       loop: "{{ packages }}"
-        
