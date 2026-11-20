@@ -1,17 +1,18 @@
-- name: demo on loops
+- name: Install packages
   hosts: local
   connection: local
   become: yes
   vars:
     packages:
-    - nginx
-    - git
-    - mysql
-    - htop 
+      - nginx
+      - git
+      - htop
+      - mysql
+      - net-tools
 
   tasks:
-    - name: Install packages
+    - name: Install packages one by one using loop
       package:
-        name: "{{ item }}'"
+        name: "{{ item }}"
         state: present
       loop: "{{ packages }}"
