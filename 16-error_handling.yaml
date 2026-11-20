@@ -1,0 +1,7 @@
+- name: check user exists or not 
+  hosts: local
+  connection: local
+  become: yes
+  tasks:
+    - name: check roboshop user
+      command: id roboshop
