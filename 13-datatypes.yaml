@@ -19,9 +19,9 @@
     - name: print course details
       debug:
         msg: |
-        course: "{{course}}: {{course | type_debug }}"
-        duration_in_hours: "{{duration_in_hours}}: {{duration_in_hours | type_debug}}"
-        is_live_session: "{{is_live_session}}: {{is_live_session | type_debug}}"
-        topics: "{{ topics }}: {{ topics | type_debug}}"
-        more_details: "{{ more_details }}: {{ more_details | type_debug}}"
-        exact_duration_months: "{{exact_duration_months}}: {{exact_duration_months | type_debug}}"
+          course: {{course}}: {{course | type_debug }}
+          duration: {{duration_in_hours}} : {{ duration_in_hours | type_debug }}
+          live: {{is_live_session}} : {{ is_live_session | type_debug }}
+          topics: {{ topics }}: {{ topics | type_debug}}
+          more details: {{ more_details }}: {{ more_details | type_debug}}
+          exact_duration: {{exact_duration_months}}: {{exact_duration_months | type_debug}}
