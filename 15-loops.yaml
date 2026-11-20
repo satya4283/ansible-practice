@@ -10,7 +10,7 @@
       - htop
 
   tasks:
-    - name: print names 
+    - name: Install packages
       package:
         name: "{{ item }}'"
         state: present
