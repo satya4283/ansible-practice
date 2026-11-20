@@ -1,12 +1,17 @@
 - name: demo on loops 
   hosts: local
   connection: local
+  vars:
+    packages:
+      - nginx
+      - git 
+      - mysql
+      - htop
+
   tasks:
     - name: print names 
-      debug:
-        msg: "{{item}}"
-      loop:
-        - satya
-        - prasanna
-        - praveen
-        - ayyappa 
+      package:
+        name: "{{ item }}'"
+        state: present
+      loop: "{{ packages }}"
+        
