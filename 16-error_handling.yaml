@@ -11,3 +11,7 @@
     - name: print user user_output
       debug:
         msg: "{{user_output}}"
+
+    - name: add roboshop user if not present 
+      command: useradd roboshop
+      when: user_output.rc != 0 
