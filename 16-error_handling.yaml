@@ -14,4 +14,9 @@
 
     - name: add roboshop user if not present 
       command: useradd roboshop
+      register: user_created
       when: user_output.rc != 0 
+    
+    - name: user user_created
+      debug:
+        msg: "{{user_created}}"
